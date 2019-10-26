@@ -8,7 +8,6 @@ export default () => {
     return(
         <>
         <Nav />
-        <div>Hello world!!</div>
         </>
     )
 }

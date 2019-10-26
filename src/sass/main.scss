@@ -1,1 +1,23 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /* defining rem 16/10*/
+}
+
+body {
+
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway&display=swap');
+
+@import 'variables/var';
+
 @import 'components/nav';

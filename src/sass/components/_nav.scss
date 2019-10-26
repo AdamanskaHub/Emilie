@@ -1,6 +1,18 @@
 .nav {
     display: flex;
+    justify-content: space-between;
+
+    &--left{
+        color: $color-action;
+        text-decoration: none;
+        font-size: $font-nav;
+        text-transform: uppercase;
+    }
     &--item {
-        color: #ea1059;
+        color: $color-action;
+        text-decoration: none;
+        margin-left: 2rem;
+        font-size: $font-nav;
+        text-transform: uppercase;
     }
 }
