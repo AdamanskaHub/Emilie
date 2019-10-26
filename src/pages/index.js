@@ -6,9 +6,11 @@ import '../sass/main.scss'
 
 export default () => {
     return(
-        <>
+        <div className='home'>
+            <div className='container'>
         <Nav />
-        </>
+        </div>
+        </div>
     )
 }
 

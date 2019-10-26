@@ -6,13 +6,19 @@
         color: $color-action;
         text-decoration: none;
         font-size: $font-nav;
+        font-family: $marker;
         text-transform: uppercase;
     }
     &--item {
-        color: $color-action;
+        color: rgba($color-action, .5);
         text-decoration: none;
-        margin-left: 2rem;
+        margin-left: 3rem;
         font-size: $font-nav;
+        font-family: $marker;
         text-transform: uppercase;
+
+        &:hover{
+            color: rgba($color-action, 1);
+        }
     }
 }
