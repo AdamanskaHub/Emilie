@@ -4,6 +4,7 @@ import Nav from "../components/nav"
 
 import "../sass/main.scss"
 import sunset from "../img/sun.svg"
+import palm from "../img/palm.png"
 
 export default () => {
   return (
@@ -24,6 +25,8 @@ export default () => {
               Switzerland.</p>
           </div>
         </div>
+        <img src={palm} alt="palm tree" class="palm palm-left" />
+        <img src={palm} alt="palm tree" class="palm palm-right" />
       </div>
     </div>
   )
