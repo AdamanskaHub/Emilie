@@ -10,7 +10,7 @@ const Nav = () => (
                 <span>Emilie</span>
             </Link>
         </div>
-        <div>
+        <div className="nav--flex">
             <Link to="/work" className="nav--item">
                 <span>work</span>
             </Link>

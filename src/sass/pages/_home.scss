@@ -1,12 +1,162 @@
-.home{
+.home {
     min-height: 100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(83,2,80,1) 100%);
-    padding: 2rem;
-    
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(83, 2, 80, 1) 100%);
+    padding: 3rem;
+
 }
 
 .container {
     max-width: 1420px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+}
+
+.centered-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 6;
+}
+
+.black-box{
+    background-color: rgba(#371d39,.8);
+    padding: 1.4rem;
+    max-width: 40vw;
+    &>p{
+        color: #fff;
+        font-family: $raleway;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.hello {
+    color: $color-action;
+    font-size: 10rem;
+    font-family: $marker;
+    text-transform: uppercase;
+    text-shadow: 3px 3px #371d39;
+    position: relative;
+    margin-top: -10vh;
+}
+
+.main-text {
+    position: relative;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.back-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    display: inline-block;
+}
+
+.skew {
+    animation: skew 3s infinite alternate;
+}
+
+.glitch {
+    animation: glitch 2.4s infinite alternate;
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg);
+    }
+
+    20% {
+        transform: skew(0deg);
+    }
+
+    21% {
+        transform: skew(-3deg);
+    }
+
+    22% {
+        transform: skew(0deg);
+    }
+
+    70% {
+        transform: skew(0deg);
+    }
+
+    71% {
+        transform: skew(5deg);
+    }
+
+    72% {
+        transform: skew(0deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.7;
+    }
+
+    21% {
+        transform: translate3d(2px, 1.5px, 0);
+        opacity: 1;
+    }
+
+    22% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    60% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    61% {
+        transform: translate3d(-2px, -1.5px, 0);
+    }
+
+    62% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    71% {
+        opacity: 0.6;
+        transform: translate3d(5px, -3px, 0);
+    }
+
+    72% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
 }

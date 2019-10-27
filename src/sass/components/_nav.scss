@@ -13,12 +13,17 @@
         color: rgba($color-action, .5);
         text-decoration: none;
         margin-left: 3rem;
-        font-size: $font-nav;
+        font-size: 2rem;
         font-family: $marker;
         text-transform: uppercase;
 
         &:hover{
             color: rgba($color-action, 1);
         }
+    }
+
+    &--flex {
+        display: flex;
+        align-items: center;
     }
 }
