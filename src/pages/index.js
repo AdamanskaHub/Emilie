@@ -19,7 +19,7 @@ export default () => {
           </h3>
           <div className="black-box">
             <p>
-              I’m a UX/UI designer and front-end 
+              I’m a UX/UI designer &amp; front-end 
             </p>
             <p>developper based in
               Switzerland.</p>
