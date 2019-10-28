@@ -5,7 +5,7 @@ import Nav from "../components/nav"
 
 import palm from "../img/palm.png"
 
-const About = (props) => (
+const About = () => (
     <>
         {/* <Helmet>
             <title>Landing - Forty by HTML5 UP</title>

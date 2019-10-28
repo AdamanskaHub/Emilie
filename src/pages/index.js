@@ -8,7 +8,7 @@ import palm from "../img/palm.png"
 
 export default () => {
   return (
-    <div className="home">
+    <div className="base home">
       <div className="container">
         <Nav />
         <img src={sunset} alt="sunset" class="centered-img" />

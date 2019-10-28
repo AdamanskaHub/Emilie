@@ -17,6 +17,11 @@ body {
     box-sizing: border-box;
 }
 
+.base {
+    padding: 3rem;
+    min-height: 100vh;
+}
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway&display=swap');
@@ -28,3 +33,4 @@ body {
 
 @import 'pages/home';
 @import 'pages/about';
+@import 'pages/work';
