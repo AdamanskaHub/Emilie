@@ -8,13 +8,14 @@ import "../sass/main.scss"
 import gone from "../img/gone.svg"
 import drinko from "../img/drinko-big.png"
 import ucheck from "../img/ucheck.png"
+import kid from "../img/kid.jpg"
 
 const Work = () => {
   return (
     <div className="base work">
       <Nav />
       {/* ===== Bg ===== */}
-      <div className="centered-img fixed">
+      <div className="fixed centered-img ">
         <img alt="decorative lines" class="pentagon big-pentagon" src={gone} />
       </div>
       <div className="centered-img small-img">
@@ -58,6 +59,24 @@ const Work = () => {
           </div>
           
         </div>
+
+        <div className="work__box">
+            <div className="work__box--text">
+            <h2>Mobility analysis dashboard</h2>
+            <p className="work__box--text-op">Front-end with React, from idea to live webapp</p>
+            <p> A mobility analysis dashboard to help companies to see the flow of people through a geographic area.</p>
+            <p>This project was done from scratch. I did UX, UI and development.</p>
+            <p>Another project in React. A nice challenge.</p>
+          </div>
+          <div className="work__box--img">
+            <img alt="Ucheck" src={kid} 
+            // className='reversed-shadow'
+            />
+          </div>
+          
+        </div>
+
+        
 
       </div>
     </div>
