@@ -1,10 +1,25 @@
 .home {
     background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(#5d0759, 100%));
+    background: linear-gradient(45deg, #160E18, #5d0759,);
+    background-size: 200% 200%;
+    animation: gradientBG 14s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .container {
     max-width: 1420px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     height: -webkit-fill-available;
@@ -16,6 +31,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 60%;
+}
+
+// animation: .8s downslow ease-in .4s;
+
+@-webkit-keyframes scaling { 0% { opacity: 0; transform: scale(0.1); } 100% { opacity: 1; transform: scale(1);}  }
+        @keyframes scaling { 0% { opacity: 0; transform: scale(0.1); } 100% { opacity: 1; transform: scale(1); }  }
+
+@-webkit-keyframes slowdown { 
+    0% { 
+        opacity: 0; 
+        transform:translate(0rem,-1rem); 
+    } 100% { 
+        opacity: 1; 
+        transform: translate(0rem,0);
+    }
+}
+@keyframes slowdown { 
+    0% { opacity: 0; transform:translate(-1rem,0); } 100% { opacity: 1; transform:translate(0,0); }  
 }
 
 .flex {
@@ -47,6 +80,7 @@
     text-shadow: 3px 3px #371d39;
     position: relative;
     margin-top: -10vh;
+    animation: 1.2s slowdown ease-in;
 }
 
 .main-text {
