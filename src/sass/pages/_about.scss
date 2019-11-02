@@ -14,6 +14,45 @@
     }
     
   }
+  &__content{
+    margin: 20% 10%;
+    font-family: $raleway;
+    &--title{
+      font-size: 4rem;
+      margin-bottom: 2.4rem;
+      color: $color-action;
+    }
+    p{
+      font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: $color-text;
+    }
+    &--company{
+      font-size: 1.6rem;
+      color: $color-text;
+      margin-bottom: 1rem;
+      span{
+        margin-left: 12px;
+        color:(rgba($color-text,.5));
+      }
+    }
+    &--position{
+      font-size: 1.6rem;
+      color: $color-text;
+      font-weight: medium;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    &--text{
+      font-size: 1.6rem;
+    margin-bottom: 4rem;
+    color: $color-text;
+    }
+  }
+  &__cv{
+    margin: 20% 10%;
+    font-family: $raleway;
+  }
 }
 
 
