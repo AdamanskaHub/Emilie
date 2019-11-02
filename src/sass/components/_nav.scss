@@ -8,6 +8,11 @@
         font-size: $font-nav;
         font-family: $marker;
         text-transform: uppercase;
+        // transform:translate(0,0);
+        span{
+            animation: scaling 4s ease-in;
+        }
+        
     }
     &--item {
         color: rgba($color-action, .5);
@@ -16,6 +21,7 @@
         font-size: 2rem;
         font-family: $marker;
         text-transform: uppercase;
+        animation: scaling 1s ease-in;
 
         &:hover{
             color: rgba($color-action, 1);
@@ -27,3 +33,10 @@
         align-items: center;
     }
 }
+
+@keyframes scaling { 
+    0% { 
+        opacity: 0; transform:scale(0); 
+    } 100% { 
+        opacity: 1; transform:scale(1);
+}}

@@ -47,9 +47,9 @@
         transform: translate(0rem,0);
     }
 }
-@keyframes slowdown { 
-    0% { opacity: 0; transform:translate(-1rem,0); } 100% { opacity: 1; transform:translate(0,0); }  
-}
+// @keyframes slowdown { 
+//     0% { opacity: 0; transform:translate(-1rem,0); } 100% { opacity: 1; transform:translate(0,0); }  
+// }
 
 .flex {
     display: flex;
@@ -80,7 +80,11 @@
     text-shadow: 3px 3px #371d39;
     position: relative;
     margin-top: -10vh;
-    animation: 1.2s slowdown ease-in;
+    animation: 1s slowdown ease-in;
+}
+
+@keyframes slowdown { 
+    0% { opacity: 0; transform:translate(0rem,-5rem); } 100% { opacity: 1; transform:translate(0,0); }  
 }
 
 .main-text {
