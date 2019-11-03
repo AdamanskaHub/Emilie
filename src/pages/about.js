@@ -25,6 +25,11 @@ const About = () => (
 
       <img src={tri1} alt="triangle" class="triangle triangle-1" />
       <img src={trib} alt="triangle" class="triangle triangle-big" />
+      <img src={tri2} alt="triangle" class="triangle triangle-2" />
+      <img src={tri3} alt="triangle" class="triangle triangle-3" />
+      <img src={tri4} alt="triangle" class="triangle 
+      triangle-4" />
+      <img src={tri5} alt="triangle" class="triangle triangle-5" />
 
       <div className="about__content">
         <h2 className="about__content--title">Who I am</h2>
@@ -81,7 +86,6 @@ const About = () => (
         
       </div>
 
-      {/* <img src={palm} alt="palm tree" className="palm palm__left" /> */}
     </div>
   </>
 )
