@@ -5,30 +5,45 @@
         top: 20%;
         left: 30%;
         width: 40vw;
+        animation: slowrotate 40s infinite;
     }
     &-1{
         top: 5%;
         left:20%;
         width: 10vw;
+        animation: slowrotate 30s infinite 2s;
     }
     &-2{
         top: 30%;
         right:25%;
         height: 25vh;
+        animation: slowrotate 30s infinite 10s;
     }
     &-3{
         top: 50%;
         left:35%;
         height: 25vh;
+        animation: slowrotate 30s infinite 15s;
     }
     &-4{
         top: 68%;
         right: 25%;
         width: 10vw;
+        animation: slowrotate 30s infinite;
     }
     &-5{
-        top: 88%;
+        top: 74%;
         left:25%;
         height: 20vh;
+        animation: slowrotate 30s infinite 10s;
     }
 }
+
+@keyframes slowrotate {
+    0% {
+        transform: rotate(0);}
+        25% {
+            transform: rotate(-20deg);}
+            75% {
+                transform: rotate(20deg);}
+    }
