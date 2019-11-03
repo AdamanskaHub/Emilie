@@ -1,0 +1,14 @@
+.triangle{
+    position: absolute;
+    opacity: .5;
+    &-big{
+        top: 20%;
+    left: 30%;
+    width: 40vw;
+    }
+    &-1{
+        top: 5%;
+        left:20%;
+        width: 10vw;
+    }
+}

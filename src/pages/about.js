@@ -2,9 +2,16 @@ import React from "react"
 import { Link } from "gatsby"
 import Nav from "../components/nav"
 import CV from "../components/cv"
+import AOS from "aos"
+import "aos/dist/aos.css"
 // import Helmet from 'react-helmet'
 
-import palm from "../img/palm.png"
+import trib from "../img/triangle-big.svg"
+import tri1 from "../img/triangle1.svg"
+import tri2 from "../img/triangle2.svg"
+import tri3 from "../img/triangle3.svg"
+import tri4 from "../img/triangle4.svg"
+import tri5 from "../img/triangle5.svg"
 
 const About = () => (
   <>
@@ -15,6 +22,9 @@ const About = () => (
 
     <div className="about__bloc">
       <Nav />
+
+      <img src={tri1} alt="triangle" class="triangle triangle-1" />
+      <img src={trib} alt="triangle" class="triangle triangle-big" />
 
       <div className="about__content">
         <h2 className="about__content--title">Who I am</h2>
@@ -43,33 +53,31 @@ const About = () => (
 
       <div className="about__cv">
         <h2 className="about__content--title">What I've done</h2>
-        <p className="about__content--company">
-          Company <span className="about__content--op">2019-2021</span>
-        </p>
-        <h3 className="about__content--position">Senior UX/UI designer</h3>
-        <p className="about__content--text">
-          XXX is a web design agency based in Bogotá whose primary mission is to
-          be the digital partner of companies. I helped the company execute two
-          contracts landed with high profile companies. I’ve led a 4 person team
-          composed of frontend and backend engineers. Currently, I’m focused on
-          learning, applying and developing new technologies that can enhance
-          our apps performance and development worflow.
-        </p>
 
-        <p className="about__content--company">
-          Company <span className="about__content--op">2019-2021</span>
-        </p>
-        <h3 className="about__content--position">Senior UX/UI designer</h3>
-        <p className="about__content--text">
-          XXX is a web design agency based in Bogotá whose primary mission is to
-          be the digital partner of companies. I helped the company execute two
-          contracts landed with high profile companies. I’ve led a 4 person team
-          composed of frontend and backend engineers. Currently, I’m focused on
-          learning, applying and developing new technologies that can enhance
-          our apps performance and development worflow.
-        </p>
-
-        <CV company="vzugzuzgu" />
+        <CV 
+        company="vzugzuzgu" 
+        position="gfhjkljhg"
+        dates="2012-2109"
+        text="bjfkljhkle"
+        />
+        <CV 
+        company="vzugzuzgu" 
+        position="gfhjkljhg"
+        dates="2012-2109"
+        text="bjfkljhkle"
+        />
+        <CV 
+        company="vzugzuzgu" 
+        position="gfhjkljhg"
+        dates="2012-2109"
+        text="bjfkljhkle"
+        />
+        <CV 
+        company="vzugzuzgu" 
+        position="gfhjkljhg"
+        dates="2012-2109"
+        text="bjfkljhkle"
+        />
         
       </div>
 
