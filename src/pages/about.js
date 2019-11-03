@@ -13,8 +13,10 @@ import tri3 from "../img/triangle3.svg"
 import tri4 from "../img/triangle4.svg"
 import tri5 from "../img/triangle5.svg"
 
-const About = () => (
-  <>
+const About = () => {
+  AOS.init({duration:1200})
+  return(
+<>
     {/* <Helmet>
             <title>Landing - Forty by HTML5 UP</title>
             <meta name="description" content="Landing Page" />
@@ -23,17 +25,25 @@ const About = () => (
     <div className="about__bloc">
       <Nav />
 
-      <img src={tri1} alt="triangle" class="triangle triangle-1" />
-      <img src={trib} alt="triangle" class="triangle triangle-big" />
-      <img src={tri2} alt="triangle" class="triangle triangle-2" />
-      <img src={tri3} alt="triangle" class="triangle triangle-3" />
+      <img src={tri1} alt="triangle" class="triangle triangle-1" 
+      data-aos="fade"/>
+      <img src={trib} alt="triangle" class="triangle triangle-big" 
+      data-aos="fade"/>
+      <img src={tri2} alt="triangle" class="triangle triangle-2" 
+      data-aos="fade-zoom-in" 
+      />
+      <img src={tri3} alt="triangle" class="triangle triangle-3" 
+      data-aos="fade-up"/>
       <img src={tri4} alt="triangle" class="triangle 
-      triangle-4" />
-      <img src={tri5} alt="triangle" class="triangle triangle-5" />
+      triangle-4" 
+      data-aos="fade-up"/>
+      <img src={tri5} alt="triangle" class="triangle triangle-5" 
+      data-aos="fade-up"
+      />
 
-      <div className="about__content">
-        <h2 className="about__content--title">Who I am</h2>
-        <p>
+      <section className="about__content">
+        <h2 className="about__content--title" data-aos="fade-up">Who I am</h2>
+        <p data-aos="fade-zoom-in" >
           I've worked many years as a UX/UI designer in startups and big
           companies.
         </p>
@@ -54,22 +64,26 @@ const About = () => (
           You want to do an app? A platform? A dashboard? I can help you, take
           your idea and make it into what it should be.
         </p>
-      </div>
+      </section>
 
-      <div className="about__cv">
-        <h2 className="about__content--title">What I've done</h2>
+      <section className="about__cv">
+        <h2 className="about__content--title"
+        data-aos="fade-up">What I've done</h2>
 
         <CV 
         company="vzugzuzgu" 
         position="gfhjkljhg"
         dates="2012-2109"
         text="bjfkljhkle"
+        data-aos="fade-zoom-in"
+        data-aos="fade-up"
         />
         <CV 
         company="vzugzuzgu" 
         position="gfhjkljhg"
         dates="2012-2109"
         text="bjfkljhkle"
+        data-aos="fade-up"
         />
         <CV 
         company="vzugzuzgu" 
@@ -84,10 +98,12 @@ const About = () => (
         text="bjfkljhkle"
         />
         
-      </div>
+      </section>
 
     </div>
   </>
-)
+  )
+  
+}
 
 export default About
