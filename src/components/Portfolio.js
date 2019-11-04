@@ -1,7 +1,5 @@
 import React from "react"
 
-import "../sass/main.scss"
-
 const Portfolio = props => (
     <section className="work__box">
         <div className="work__box--text">

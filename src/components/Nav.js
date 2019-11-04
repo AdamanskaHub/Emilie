@@ -1,9 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import AOS from "aos"
-import "aos/dist/aos.css"
-
-import '../sass/main.scss'
 
 const Nav = props => (
     <header className="nav">

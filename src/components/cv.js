@@ -1,7 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import "../sass/main.scss"
 
 const CV = props => (
     <div data-aos="fade-up">
