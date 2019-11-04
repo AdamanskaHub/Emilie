@@ -13,10 +13,14 @@ import ucheck from "../img/ucheck.png"
 import kid from "../img/kid.jpg"
 
 const Work = () => {
-  AOS.init({ duration: 1200 })
+  if (process.isClient) {
+    AOS.init({duration:1400})
+  }
   return (
     <div className="base work">
-      <Nav isActive="work" />
+      <Nav 
+      // isActive="work" 
+      />
       {/* ===== Bg ===== */}
       <div className="fixed-img">
         <img alt="decorative lines" class="pentagon big-pentagon" src={gone} />

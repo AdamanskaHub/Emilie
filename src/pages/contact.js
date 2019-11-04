@@ -9,11 +9,15 @@ import "aos/dist/aos.css"
 // import pic08 from '../assets/images/pic08.jpg'
 
 const Contact = (props) => {
-    AOS.init({duration:1400})
-
+    
+    if (process.isClient) {
+        AOS.init({duration:1400})
+      }
     return (
         <div className="contact__bloc">
-            <Nav  isActive="contact"/>
+            <Nav 
+            //  isActive="contact"
+            />
             <section className="contact__content">
                 <h2 className="about__content--title" data-aos="fade-left">What I can do for you</h2>
                 <p data-aos="fade-right">

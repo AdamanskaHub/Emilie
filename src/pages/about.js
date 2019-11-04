@@ -13,7 +13,9 @@ import tri4 from "../img/triangle4.svg"
 import tri5 from "../img/triangle5.svg"
 
 const About = () => {
-  AOS.init({duration:1200})
+  if (process.isClient) {
+    AOS.init()
+  }
   return(
 <>
     {/* <Helmet>
@@ -22,7 +24,9 @@ const About = () => {
         </Helmet> */}
 
     <div className="about__bloc">
-      <Nav  isActive="about"/>
+      <Nav  
+      // isActive="about"
+      />
 
       <img src={tri1} alt="triangle" class="triangle triangle-1" 
       data-aos="fade-up"/>
