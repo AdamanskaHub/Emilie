@@ -22,8 +22,21 @@ body {
     min-height: 100vh;
 }
 
-.fixed{
+
+.centered-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+}
+
+.fixed-img{
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
 }
 
 

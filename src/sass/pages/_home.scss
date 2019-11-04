@@ -1,8 +1,8 @@
 .home {
     background: rgb(2, 0, 36);
-    background: linear-gradient(45deg, #160E18, #5d0759,);
+    background: linear-gradient(-45deg, #160E18, #5d0759,);
     background-size: 200% 200%;
-    animation: gradientBG 14s ease infinite;
+    animation: gradientBG 10s ease infinite;
 }
 
 @keyframes gradientBG {
@@ -23,14 +23,6 @@
     display: flex;
     flex-direction: column;
     height: -webkit-fill-available;
-}
-
-.centered-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 60%;
 }
 
 // animation: .8s downslow ease-in .4s;

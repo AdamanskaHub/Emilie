@@ -65,8 +65,8 @@
         &:hover {
           -webkit-filter: grayscale(0);
           filter: grayscale(0);
-          -webkit-transform: scale(1.05);
-	transform: scale(1.05);
+          -webkit-transform: scale(1.03);
+	transform: scale(1.03);
         }
         @media  only screen and (max-width: 800px){
           -webkit-filter: grayscale(0);
@@ -93,7 +93,8 @@
 }
 
 .small-img {
-  height: 30%;
+  height: 40%;
+  position:fixed;
 }
 
 @keyframes turn {

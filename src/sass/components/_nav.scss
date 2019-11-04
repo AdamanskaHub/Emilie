@@ -10,7 +10,10 @@
         text-transform: uppercase;
         // transform:translate(0,0);
         span{
-            animation: scaling 4s ease-in;
+            animation: scaling 4s ease;
+        }
+        &:hover{
+            animation: glitch 2.2s infinite alternate;
         }
         
     }
@@ -25,6 +28,7 @@
 
         &:hover{
             color: rgba($color-action, 1);
+            animation: glitch 2.2s infinite alternate;
         }
     }
 
