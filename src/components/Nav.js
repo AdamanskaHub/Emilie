@@ -10,17 +10,17 @@ const Nav = () => (
         </div>
         <div className="nav--flex">
             <Link to="/work" className="nav--item"
-            // data-aos="fade-in"
+            data-aos="fade-in"
             >
                 <span>work</span>
             </Link>
             <Link to="/about" className="nav--item"
-            // data-aos="fade-in"
+            data-aos="fade-in"
             >
                 <span>about</span>
             </Link>
             <Link to="/contact" className="nav--item"
-            // data-aos="fade-in"
+            data-aos="fade-in"
             >
                 <span>contact</span>
             </Link>
