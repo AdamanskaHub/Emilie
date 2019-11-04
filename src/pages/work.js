@@ -13,9 +13,9 @@ import ucheck from "../img/ucheck.png"
 import kid from "../img/kid.jpg"
 
 const Work = () => {
-  if (process.isClient) {
+  // if (process.isClient) {
     AOS.init({duration:1400})
-  }
+  // }
   return (
     <div className="base work">
       <Nav 

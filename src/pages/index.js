@@ -9,9 +9,9 @@ import sunset from "../img/sun.svg"
 import palm from "../img/palm.png"
 
 export default () => {
-  if (process.isClient) {
+  // if (process.isClient) {
     AOS.init({duration:800})
-  }
+  // }
   return (
     <div className="base home">
       <div className="container">

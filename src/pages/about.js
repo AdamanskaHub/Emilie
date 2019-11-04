@@ -13,9 +13,9 @@ import tri4 from "../img/triangle4.svg"
 import tri5 from "../img/triangle5.svg"
 
 const About = () => {
-  if (process.isClient) {
+  // if (process.isClient) {
     AOS.init()
-  }
+  // }
   return(
 <>
     {/* <Helmet>

@@ -1,18 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 import Nav from "../components/Nav"
 // import Helmet from 'react-helmet'
-// import Layout from '../components/layout'
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-// import pic08 from '../assets/images/pic08.jpg'
-
 const Contact = (props) => {
     
-    if (process.isClient) {
+    // if (process.isClient) {
         AOS.init({duration:1400})
-      }
+    // }
     return (
         <div className="contact__bloc">
             <Nav 
@@ -28,7 +24,7 @@ const Contact = (props) => {
             <section className="contact__form">
             <a href="mailto:adamanska@gmail.com?Subject=Hello">
     <div class="contact__button" data-aos="fade-up">
-      <div class="contact__buttonalt">CO<span class="blinklittle">N</span>TACT <span class="blinkless">M</span>E</div>
+        <div class="contact__buttonalt">CO<span class="blinklittle">N</span>TACT <span class="blinkless">M</span>E</div>
     </div>
     </a>
             </section>
