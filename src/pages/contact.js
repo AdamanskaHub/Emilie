@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Nav from "../components/nav"
+import Nav from "../components/Nav"
 // import Helmet from 'react-helmet'
 // import Layout from '../components/layout'
 import AOS from "aos"

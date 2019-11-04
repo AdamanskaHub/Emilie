@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 // import { Link } from "gatsby"
-import Nav from "../components/nav"
+import Nav from "../components/Nav"
 import Portfolio from "../components/Portfolio"
 // import Helmet from 'react-helmet'
 import AOS from "aos"

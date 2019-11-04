@@ -1,5 +1,5 @@
 import React from "react"
-import Nav from "../components/nav"
+import Nav from "../components/Nav"
 import CV from "../components/cv"
 import AOS from "aos"
 import "aos/dist/aos.css"
