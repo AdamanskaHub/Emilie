@@ -1,8 +1,9 @@
 .contact{
-  &__bloc {
-    background-image: linear-gradient(#260325, #432b57);
+  &__bloc { 
+    // background-image: linear-gradient(#260325, #432b57);
+    background-image: linear-gradient(#060414, #503183);
     min-height: 100vh;
-    padding: 3rem 3rem 50vh;
+    padding: 3rem 3rem 10vh;
     position: relative;
     transform: .5s;
     @media only screen and (max-width: 800px) {
@@ -13,6 +14,17 @@
       padding: 3rem 3rem 30vh;
     }
     
+  }
+  &__content{
+    margin: 20% 10% 5%;
+    font-family: "Raleway", helvetica, sans-serif;
+    overflow: hidden;
+    p{
+      font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: $color-text;
+    text-align: center;
+    }
   }
 }
 
@@ -88,6 +100,9 @@
 /* .title__txt b .blinkless {
     animation: blinkless linear infinite 3s;
   } */
+  .blinkless {
+    animation: blinkless linear infinite 8s;
+  }
 @keyframes blinkless {
   34% {
     color: inherit;
@@ -106,6 +121,14 @@
     color: inherit;
     text-shadow: inherit;
   }
+  38% {
+    text-shadow: none;
+  }
+  39% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
 }
 
 .blinklittle {
@@ -175,7 +198,7 @@
 
   &__button {
     border-radius: 3.618em;
-    border: 0px #f06c98 solid;
+    border: 0px #de386f solid;
     -webkit-box-shadow: -1px -1px 14px 3px rgba(234, 16, 89, 1);
     -moz-box-shadow: -1px -1px 14px 3px rgba(234, 16, 89, 1);
     box-shadow: -1px -1px 14px 3px rgba(234, 16, 89, 1);
@@ -184,21 +207,23 @@
     -ms-z-index: 3;
     -o-z-index: 3;
     z-index: 3;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   &__buttonalt {
     cursor: pointer;
     padding: 0.618em;
     border-radius: 0.618em;
-    border: 8px #f06c98 solid;
+    border: 8px #de386f solid;
     -webkit-box-shadow: -1px -1px 14px 3px rgba(234, 16, 89, 1) inset;
     -moz-box-shadow: -1px -1px 14px 3px rgba(234, 16, 89, 1) inset;
     box-shadow: -1px -1px 14px 3px rgba(234, 16, 89, 1) inset;
     letter-spacing: 0.15em;
     font: 4.618em "Fredoka One", "PT Mono", sans-serif;
-    color: #f06c98;
-    text-shadow: 0 5px 30px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ea1059,
-      0 0 0.1em #ea1059, 0 10px 3px #000;
+    color: #de386f;
+    text-shadow: 0 5px 30px, 0 0 2px, 0 0 0.5em #ea1059,
+      0 0 0.1em #ea1059, 0 10px 3px #00000073;
     transition: border 1s, color 1.5s, font-size .5s;
     z-index: 3;
     text-align: center;
@@ -212,8 +237,8 @@
       letter-spacing: 0.15em;
       font: 4.618em "Fredoka One", "PT Mono", sans-serif;
       color: #fbd0eb;
-      text-shadow: 0 5px 30px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ea1059,
-        0 0 0.1em #ea1059, 0 10px 3px #000;
+      text-shadow: 0 5px 30px, 0 0 2px, 0 0 0.5em #ea1059,
+        0 0 0.1em #ea1059, 0 10px 3px #00000073;
     }
 
     @media only screen and (max-width: 800px) {
@@ -230,17 +255,6 @@
       text-align: center;
     }
   }
-
-  //   &-col{
-  //     margin-top: 2rem;
-  //     display: grid;
-  //     grid-template-columns: 1fr 1fr;
-  // grid-template-rows: 1fr;
-  // grid-column-gap: 20px;
-  // grid-row-gap: 20px;
-  // justify-items: stretch;
-  // align-items: center;
-  //   }
 }
 
 .palm {

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Nav from "../components/nav"
 // import Helmet from 'react-helmet'
 // import Layout from '../components/layout'
 import AOS from "aos"
@@ -8,29 +9,28 @@ import "aos/dist/aos.css"
 // import pic08 from '../assets/images/pic08.jpg'
 
 const Contact = (props) => {
-    AOS.init()
+    AOS.init({duration:1400})
 
     return (
-        <div>
-            <h1> Scroll down! </h1>
-            <section style={{ height: "1200px" }} />
-            <h1>Scroll back up and then down again to see if the animation will work
-                again. Inspect the animated elements to see the classes change on
-                scroll.</h1>
-            <section style={{ height: "1200px" }} />
+        <div className="contact__bloc">
+            <Nav />
+            <section className="contact__content">
+                <h2 className="about__content--title" data-aos="fade-left">What I can do for you</h2>
+                <p data-aos="fade-right">
+                    UX? UX? Front-end? React? Vue? Freelancing? Taking your startup from zero to hero? Remote job? Giving classes? Yes to all.</p>
+                    <p data-aos="fade-right">
+                    Simply message me and I should quickly reply to you ;)</p>
+            </section>
+            <section className="contact__form">
+            <a href="mailto:adamanska@gmail.com?Subject=Hello">
+    <div class="contact__button" data-aos="fade-up">
+      <div class="contact__buttonalt">CO<span class="blinklittle">N</span>TACT <span class="blinkless">M</span>E</div>
+    </div>
+    </a>
+            </section>
+
         </div>
     )
 }
 
 export default Contact
-
-{/* <p data-aos="fade-zoom-in">tgjzhkuzui</p> */}
-// componentDidMount() {
-//     const AOS = require('aos');
-//     this.aos = AOS
-//     this.aos.init()
-// }
-
-// componentDidUpdate() {
-//     this.aos.refresh()
-// }
