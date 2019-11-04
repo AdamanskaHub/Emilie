@@ -227,6 +227,8 @@
     transition: border 1s, color 1.5s, font-size .5s;
     z-index: 3;
     text-align: center;
+    width: fit-content;
+    margin: 0 auto;
 
     &:hover {
       cursor: pointer;

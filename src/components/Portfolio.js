@@ -1,18 +1,37 @@
 import React from "react"
+import Fade from 'react-reveal/Fade'
 
 const Portfolio = props => (
     <section className="work__box">
         <div className="work__box--text">
-            <h2 data-aos="fade-up">{props.title}</h2>
-            <p className="work__box--text-op" data-aos="fade-up">{props.op}</p>
-            <p data-aos="fade-up">
+        <Fade bottom ssrFadeout>
+        <h2>{props.title}</h2>
+        </Fade>
+            
+            <Fade bottom ssrFadeout>
+            <p className="work__box--text-op">{props.op}</p>
+            </Fade>
+            
+            <Fade bottom ssrFadeout>
+            <p>
                 {props.para1}
             </p>
-            <p data-aos="fade-up">{props.para2}</p>
-            <p data-aos="fade-up">{props.para3}</p>
+            </Fade>
+            
+            <Fade bottom ssrFadeout>
+            <p>{props.para2}</p>
+            </Fade>
+            
+            <Fade bottom ssrFadeout>
+            <p>{props.para3}</p>
+            </Fade>
+            
         </div>
-        <div className="work__box--img" data-aos="fade-up">
-            <img alt="Bar management dashboard" src={props.img} />
+        <div className="work__box--img">
+        <Fade right ssrFadeout>
+        <img alt="Bar management dashboard" src={props.img} />
+        </Fade>
+            
         </div>
     </section>
 )

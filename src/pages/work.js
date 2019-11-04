@@ -3,8 +3,6 @@ import React, { Component } from "react"
 import Nav from "../components/Nav"
 import Portfolio from "../components/Portfolio"
 // import Helmet from 'react-helmet'
-import AOS from "aos"
-import "aos/dist/aos.css"
 
 import "../sass/main.scss"
 import gone from "../img/gone.svg"
@@ -13,13 +11,10 @@ import ucheck from "../img/ucheck.png"
 import kid from "../img/kid.jpg"
 
 const Work = () => {
-  // if (process.isClient) {
-    AOS.init({duration:1400})
-  // }
   return (
     <div className="base work">
       <Nav 
-      // isActive="work" 
+      isActive="work" 
       />
       {/* ===== Bg ===== */}
       <div className="fixed-img">
