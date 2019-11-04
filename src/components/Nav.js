@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Nav = props => (
+const Nav = () => (
     <header className="nav">
         <div>
             <Link to="/" className="nav--left">
@@ -10,18 +10,18 @@ const Nav = props => (
         </div>
         <div className="nav--flex">
             <Link to="/work" className="nav--item"
-            // className={`nav--item  + ${props.isActive=="work" ? 'nav--is-active' : ''}`} 
-            data-aos="fade-in">
+            data-aos="fade-in"
+            >
                 <span>work</span>
             </Link>
             <Link to="/about" className="nav--item"
-            // className={`nav--item  + ${props.isActive=="about" ? 'nav--is-active' : ''}`} 
-            data-aos="fade-in">
+            data-aos="fade-in"
+            >
                 <span>about</span>
             </Link>
             <Link to="/contact" className="nav--item"
-            // className={`nav--item  + ${props.isActive=="contact" ? 'nav--is-active' : ''}`} 
-            data-aos="fade-in">
+            data-aos="fade-in"
+            >
                 <span>contact</span>
             </Link>
         </div>
@@ -32,3 +32,5 @@ const Nav = props => (
 
 
 export default Nav
+
+// className={`nav--item  + ${props.isActive=="work" ? 'nav--is-active' : ''}`} 
