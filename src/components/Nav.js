@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import '../sass/main.scss'
 
-const Nav = () => (
+const Nav = props => (
     <header className="nav">
         <div>
             <Link to="/" className="nav--left">
@@ -11,13 +13,13 @@ const Nav = () => (
             </Link>
         </div>
         <div className="nav--flex">
-            <Link to="/work" className="nav--item">
+            <Link to="/work" className={`nav--item  + ${props.isActive=="work" ? 'nav--is-active' : ''}`} data-aos="fade-in">
                 <span>work</span>
             </Link>
-            <Link to="/about" className="nav--item">
+            <Link to="/about" className={`nav--item  + ${props.isActive=="about" ? 'nav--is-active' : ''}`} data-aos="fade-in">
                 <span>about</span>
             </Link>
-            <Link to="/contact" className="nav--item">
+            <Link to="/contact" className={`nav--item  + ${props.isActive=="contact" ? 'nav--is-active' : ''}`} data-aos="fade-in">
                 <span>contact</span>
             </Link>
         </div>

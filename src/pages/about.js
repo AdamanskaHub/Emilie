@@ -22,7 +22,7 @@ const About = () => {
         </Helmet> */}
 
     <div className="about__bloc">
-      <Nav />
+      <Nav  isActive="about"/>
 
       <img src={tri1} alt="triangle" class="triangle triangle-1" 
       data-aos="fade-up"/>
