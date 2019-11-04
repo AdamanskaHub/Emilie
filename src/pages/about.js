@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Nav from "../components/nav"
 import CV from "../components/cv"
 import AOS from "aos"
@@ -121,7 +120,7 @@ const About = () => {
         dates="2012-2013"
         content="I co-founded this startup with previous work partners. My role was to take care of the design and help with the marketing. We didn't become multimillionaires, but it was still a lot of fun."
         />
-        <p className="about__extra">And more...</p>
+        <p className="about__extra" data-aos="fade-up">And more...</p>
       </section>
 
     </div>
