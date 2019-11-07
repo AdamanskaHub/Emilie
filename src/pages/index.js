@@ -23,7 +23,7 @@ export default () => {
             <p>
               I’m a UX/UI designer &amp; front-end 
             </p>
-            <p>developper based in
+            <p>developer based in
               Switzerland.</p>
           </div>
           </Fade>
