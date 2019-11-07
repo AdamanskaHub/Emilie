@@ -19,6 +19,9 @@
     margin: 20% 10%;
     font-family: $raleway;
     overflow: hidden;
+    @media only screen and (max-width: 600px){
+      margin: 20% 0;
+    }
     &--title{
       font-size: 4rem;
       margin-bottom: 2.4rem;
@@ -56,6 +59,9 @@
   &__cv{
     margin: 20% 10%;
     font-family: $raleway;
+    @media only screen and (max-width: 600px){
+      margin: 20% 0;
+    }
   }
   &__extra{
     font-size: 1.6rem;

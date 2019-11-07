@@ -20,6 +20,9 @@ body {
 .base {
     padding: 3rem;
     min-height: 100vh;
+    @media only screen and (max-width: 600px){
+        padding: 2rem;
+    }
 }
 
 
@@ -29,6 +32,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 60%;
+    max-width: 90vw;
 }
 
 .fixed-img{

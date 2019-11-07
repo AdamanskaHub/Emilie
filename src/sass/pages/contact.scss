@@ -19,6 +19,9 @@
     margin: 20% 10% 5%;
     font-family: "Raleway", helvetica, sans-serif;
     overflow: hidden;
+    @media only screen and (max-width: 600px){
+      margin: 20% 0;
+    }
     p{
       font-size: 1.6rem;
     margin-bottom: 1rem;
@@ -221,6 +224,9 @@
     box-shadow: -1px -1px 14px 3px rgba(234, 16, 89, 1) inset;
     letter-spacing: 0.15em;
     font: 4.618em "Fredoka One", "PT Mono", sans-serif;
+    @media only screen and (max-width: 600px){
+      font: 3em "Fredoka One", "PT Mono", sans-serif;
+    }
     color: #de386f;
     text-shadow: 0 5px 30px, 0 0 2px, 0 0 0.5em #ea1059,
       0 0 0.1em #ea1059, 0 10px 3px #00000073;
