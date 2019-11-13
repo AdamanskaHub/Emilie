@@ -72,14 +72,39 @@
       width: 100%;
       height: 100%;
       background-color: pink;
+      display: flex;
       .tooth {
         top: 0;
         background-color: powderblue;
         position: relative;
       }
       .t-one{
-        width:20%;
+        width:15%;
         height: 50%;
+        &--bottom {
+          width: 100%;
+          padding-top: 100%;
+          background-color: rebeccapurple;
+          border-radius: 50%;
+          position: absolute;
+          top: 70%;
+        }
+      }
+      .t-two{
+        width:20%;
+        height: 60%;
+        &--bottom {
+          width: 100%;
+          padding-top: 100%;
+          background-color: rebeccapurple;
+          border-radius: 50%;
+          position: absolute;
+          top: 70%;
+        }
+      }
+      .t-three{
+        width:25%;
+        height: 70%;
         &--bottom {
           width: 100%;
           padding-top: 100%;

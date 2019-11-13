@@ -44,8 +44,12 @@ class Worktwo extends Component {
               <div className="tooth t-one">
                 <div className="t-one--bottom"></div>
               </div>
-              <div className="t-two"></div>
-              <div className="t-three"></div>
+              <div className="tooth t-two">
+              <div className="t-two--bottom"></div>
+              </div>
+              <div className="tooth t-three">
+              <div className="t-three--bottom"></div>
+              </div>
               <div className="t-three"></div>
               <div className="t-two"></div>
               <div className="t-one"></div>
