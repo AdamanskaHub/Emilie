@@ -32,24 +32,31 @@ class Worktwo extends Component {
           isActive="worktwo"
         />
 
-{/* A N I M A T I O N  */}
-<div className="container">
-  <div className="head">
-    <div className="eyer"></div>
-    <div className="eyel"></div>
-    <div className="nose"></div>
-  </div>
+        {/* A N I M A T I O N  */}
+        <div className="container">
+          <div className="head">
+            <div className="eye left"></div>
+            <div className="eye right"></div>
+            <div className="nose"></div>
 
-  <div className="teeth">
-    <div className="t-one"></div>
-    <div className="t-two"></div>
-    <div className="t-three"></div>
-    <div className="t-three"></div>
-    <div className="t-two"></div>
-    <div className="t-one"></div>
-  </div>
+            <div className="teeth">
+              <div className="teeth-container">
+              <div className="tooth t-one">
+                <div className="t-one--bottom"></div>
+              </div>
+              <div className="t-two"></div>
+              <div className="t-three"></div>
+              <div className="t-three"></div>
+              <div className="t-two"></div>
+              <div className="t-one"></div>
+              </div>
+              
+            </div>
+          </div>
 
-</div>
+
+
+        </div>
 
         {/* ===== Bg ===== */}
         {/* <div className="fixed-img">
