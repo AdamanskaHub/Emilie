@@ -7,14 +7,13 @@
   &--display {
     margin: 20% 10%;
     z-index: 6;
-    @media only screen and (max-width: 600px){
+
+    @media only screen and (max-width: 600px) {
       margin: 20% 0;
     }
   }
 
-  &__distortion {
-    
-  }
+  &__distortion {}
 
 }
 
@@ -26,6 +25,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .head {
   height: 25rem;
   width: 25rem;
@@ -33,6 +33,7 @@
   border-radius: 50%;
   display: inline-block;
   position: relative;
+
   .eye {
     height: 7rem;
     width: 6rem;
@@ -40,15 +41,18 @@
     border-radius: 50%;
     position: absolute;
   }
+
   .left {
     top: 40%;
     left: 30%;
   }
+
   .right {
     top: 40%;
     right: 5%;
     width: 5.5rem;
   }
+
   .nose {
     width: 0;
     height: 0;
@@ -60,95 +64,58 @@
     left: 60%;
     border-radius: 40%;
   }
-  .teeth{
+
+  .teeth {
     position: absolute;
     top: 82%;
-    left: 30%;
+    left: 32%;
     background: #333;
-    width: 60%;
+    width: 55%;
     height: 30%;
-    .teeth-container{
+
+    .teeth-container {
       position: relative;
       width: 100%;
       height: 100%;
       background-color: pink;
       display: flex;
+
       .tooth {
         top: 0;
-        background-color: powderblue;
+        background: rgb(165, 164, 196);
+        background: linear-gradient(27deg, rgba(165, 164, 196, 1) 0%, rgba(181, 198, 207, 1) 100%);
+        border-radius: 10px;
         position: relative;
       }
-      .t-one{
-        width:17.5%;
-        height: 50%;
-        &--bottom {
-          width: 100%;
-          padding-top: 100%;
-          background-color: rebeccapurple;
-          border-radius: 50%;
-          position: absolute;
-          top: 70%;
-        }
-      }
-      .t-two{
-        width:20%;
-        height: 60%;
-        &--bottom {
-          width: 100%;
-          padding-top: 100%;
-          background-color: rebeccapurple;
-          border-radius: 50%;
-          position: absolute;
-          top: 70%;
-        }
-      }
-      .t-three{
-        width:30.5%;
+
+      .t-one {
+        width: 17.5%;
         height: 70%;
-        &--bottom {
-          width: 100%;
-          padding-top: 100%;
-          background-color: rebeccapurple;
-          border-radius: 50%;
-          position: absolute;
-          top: 70%;
-        }
       }
-      .t-four{
-        width:20%;
-        height: 68%;
-        &--bottom {
-          width: 100%;
-          padding-top: 100%;
-          background-color: rebeccapurple;
-          border-radius: 50%;
-          position: absolute;
-          top: 70%;
-        }
+
+      .t-two {
+        width: 20%;
+        height: 80.5%;
       }
-      .t-five{
-        width:9.5%;
-        height: 60%;
-        &--bottom {
-          width: 100%;
-          padding-top: 100%;
-          background-color: rebeccapurple;
-          border-radius: 50%;
-          position: absolute;
-          top: 70%;
-        }
+
+      .t-three {
+        width: 30.5%;
+        height: 89%;
       }
-      .t-six{
-        width:5%;
-        height: 50%;
-        &--bottom {
-          width: 100%;
-          padding-top: 100%;
-          background-color: rebeccapurple;
-          border-radius: 50%;
-          position: absolute;
-          top: 70%;
-        }
+
+      .t-four {
+        width: 20%;
+        height: 85%;
+      }
+
+      .t-five {
+        width: 9.5%;
+        height: 74.5%;
+      }
+
+      .t-six {
+        width: 5%;
+        height: 61%;
       }
     }
   }
