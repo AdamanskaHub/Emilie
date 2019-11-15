@@ -79,7 +79,7 @@
         position: relative;
       }
       .t-one{
-        width:15%;
+        width:17.5%;
         height: 50%;
         &--bottom {
           width: 100%;
@@ -103,8 +103,44 @@
         }
       }
       .t-three{
-        width:25%;
+        width:30.5%;
         height: 70%;
+        &--bottom {
+          width: 100%;
+          padding-top: 100%;
+          background-color: rebeccapurple;
+          border-radius: 50%;
+          position: absolute;
+          top: 70%;
+        }
+      }
+      .t-four{
+        width:20%;
+        height: 68%;
+        &--bottom {
+          width: 100%;
+          padding-top: 100%;
+          background-color: rebeccapurple;
+          border-radius: 50%;
+          position: absolute;
+          top: 70%;
+        }
+      }
+      .t-five{
+        width:9.5%;
+        height: 60%;
+        &--bottom {
+          width: 100%;
+          padding-top: 100%;
+          background-color: rebeccapurple;
+          border-radius: 50%;
+          position: absolute;
+          top: 70%;
+        }
+      }
+      .t-six{
+        width:5%;
+        height: 50%;
         &--bottom {
           width: 100%;
           padding-top: 100%;
