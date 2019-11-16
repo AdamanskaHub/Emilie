@@ -45,38 +45,26 @@ class Worktwo extends Component {
 
             <div className="teeth">
               <div className="teeth-container">
-              <div className="tooth t-one">
+                <div className="tooth t-one">
+                </div>
+                <div className="tooth t-two">
+                </div>
+                <div className="tooth t-three">
+                </div>
+                <div className="tooth t-four">
+                </div>
+                <div className="tooth t-five">
+                </div>
+                <div className="tooth t-six">
+                </div>
               </div>
-              <div className="tooth t-two">
-              </div>
-              <div className="tooth t-three">
-              </div>
-              <div className="tooth t-four">
-              </div>
-              <div className="tooth t-five">
-              </div>
-              <div className="tooth t-six">
-              </div>
-              </div>
-              
             </div>
           </div>
-
-
-
+          <h3 className="text">Hi stranger</h3>
+          <div className="shadow-box">
+            <div className="shadow"></div>
+          </div>
         </div>
-
-        {/* ===== Bg ===== */}
-        {/* <div className="fixed-img">
-        <img alt="decorative lines" class="pentagon big-pentagon" src={gone} />
-      </div> 
-      <div className="centered-img small-img">
-        <img
-          alt="decorative lines"
-          class="pentagon small-pentagon"
-          src={gone}
-        />
-      </div>*/}
         {/* ===== Col ===== */}
         <div className="worktwo__distortion">
           {/* <img src={drinko} alt="drinko"/> */}
