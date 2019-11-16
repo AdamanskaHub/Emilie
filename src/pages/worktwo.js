@@ -36,9 +36,9 @@ class Worktwo extends Component {
         <div className="container">
           <div className="head">
             <div className="smokeyl"></div>
-            <div className="smokeyl smokey-small"></div>
+            {/* <div className="smokeyl smokey-small"></div> */}
             <div className="smokey"></div>
-            <div className="smokey smokey-small"></div>
+            {/* <div className="smokey smokey-small"></div> */}
             <div className="eye left"></div>
             <div className="eye right"></div>
             <div className="nose"></div>
