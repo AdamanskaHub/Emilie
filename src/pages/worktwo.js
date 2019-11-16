@@ -35,7 +35,10 @@ class Worktwo extends Component {
         {/* A N I M A T I O N  */}
         <div className="container">
           <div className="head">
-            <div className="smoke"></div>
+            <div className="smokeyl"></div>
+            <div className="smokeyl smokey-small"></div>
+            <div className="smokey"></div>
+            <div className="smokey smokey-small"></div>
             <div className="eye left"></div>
             <div className="eye right"></div>
             <div className="nose"></div>
